@@ -2,11 +2,9 @@ package zeropointnothing.foods_galore;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
-import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionUtil;
 import net.minecraft.registry.*;
 import net.minecraft.text.Text;
@@ -23,8 +21,19 @@ public class ModItems {
 
     // FOODS
     public static final Item SEASONED_BREAD = register(
-            new Item(new Item.Settings().food(new FoodComponent.Builder().alwaysEdible().statusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 20 * 10, 2), 1.0f).build())),
+            new Item(new Item.Settings().food(new FoodComponent.Builder().alwaysEdible()
+                    .statusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 20 * 10, 2), 1.0f).build())),
             "seasoned_bread"
+    );
+
+    public static final Item COOKED_BREAD = register(
+            new Item(new Item.Settings().food(new FoodComponent.Builder().snack().hunger(7).build())),
+            "cooked_bread"
+    );
+
+    public static final Item BREAD_SLICE = register(
+            new Item(new Item.Settings().food(new FoodComponent.Builder().snack().hunger(4).build())),
+            "bread_slice"
     );
 
     public static final Item BERRY_WINE_MUNCH = register(
@@ -46,7 +55,9 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(FG_ITEM_GROUP_KEY).register(itemGroup -> {
             itemGroup.add(ModItems.SEASONED_BREAD);
-            itemGroup.add(ModItems.BERRY_WINE_MUNCH);
+//            itemGroup.add(ModItems.BERRY_WINE_MUNCH);
+            itemGroup.add(ModItems.COOKED_BREAD);
+            itemGroup.add(ModItems.BREAD_SLICE);
             itemGroup.add(PotionUtil.setPotion(new ItemStack(Items.POTION), FoodsGalore.BERRY_WINE));
         });
     }
