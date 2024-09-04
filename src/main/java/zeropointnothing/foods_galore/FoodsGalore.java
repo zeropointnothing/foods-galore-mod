@@ -3,8 +3,12 @@ package zeropointnothing.foods_galore;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistry;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.effect.StatusEffect;
+import net.minecraft.entity.effect.StatusEffectCategory;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Items;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.Potions;
@@ -29,18 +33,13 @@ public class FoodsGalore implements ModInitializer {
 			new Identifier("foods-galore", "berry_wine"),
 			new Potion(
 					new StatusEffectInstance(
-							StatusEffects.RESISTANCE,
-							20 * 120,
-							2
-					),
-					new StatusEffectInstance(
-							StatusEffects.NAUSEA,
+							ModItems.DRUNK_EFFECT,
 							20 * 60,
 							0
 					)
 			)
 	);
-
+	
 	@Override
 	public void onInitialize() {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
@@ -50,8 +49,7 @@ public class FoodsGalore implements ModInitializer {
 		LOGGER.info("Hello from FG!!");
 
 		ModItems.initialize();
-
-
+		Registry.register(Registries.STATUS_EFFECT, new Identifier("foods-galore", "drunk"), ModItems.DRUNK_EFFECT);
 		BrewingRecipeRegistry.registerPotionRecipe(Potions.WATER, Items.SWEET_BERRIES, BERRY_WINE);
 	}
 }
