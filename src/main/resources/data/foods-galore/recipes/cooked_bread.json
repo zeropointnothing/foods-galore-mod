@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "foods-galore:bread_slice"
+  },
+  "result": "foods-galore:cooked_bread",
+  "experience": 0.15,
+  "cookingtime": 200
+}
+
