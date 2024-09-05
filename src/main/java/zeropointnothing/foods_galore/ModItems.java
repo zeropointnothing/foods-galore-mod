@@ -69,13 +69,13 @@ public class ModItems {
 
     // FOODS
     public static final Item SEASONED_BREAD = register(
-            new Item(new Item.Settings().food(new FoodComponent.Builder().alwaysEdible().hunger(5)
+            new Item(new Item.Settings().food(new FoodComponent.Builder().alwaysEdible().hunger(5).saturationModifier(5.8f)
                     .statusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 20 * 10, 2), 1.0f).build())),
             "seasoned_bread"
     );
 
     public static final Item COOKED_BREAD = register(
-            new Item(new Item.Settings().food(new FoodComponent.Builder().snack().hunger(7).build())),
+            new Item(new Item.Settings().food(new FoodComponent.Builder().snack().hunger(7).saturationModifier(1.5f).build())),
             "cooked_bread"
     );
 
