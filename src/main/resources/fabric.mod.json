@@ -3,13 +3,13 @@
 	"id": "foods-galore",
 	"version": "${version}",
 	"name": "Foods Galore!",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A simple Fabric mod that adds tons of new food items to Minecraft!",
 	"authors": [
-		"Me!"
+		"zeropointnothing"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/zeropointnothing/foods-galore-mod"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/foods-galore/icon.png",
