@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "foods-galore:bread_slice"
+    },
+    "title": "You Know What They Say!",
+    "description": "Acquire a Slice of Bread. Welcome to Foods Galore!",
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "foods-galore:root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "foods-galore:bread_slice"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

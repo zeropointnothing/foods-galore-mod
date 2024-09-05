@@ -1,0 +1,18 @@
+{
+  "display": {
+    "icon": {
+      "item": "foods-galore:seasoned_bread"
+    },
+    "title": "Foods Galore!",
+    "description": "idk description",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false,
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png"
+  },
+  "criteria": {
+    "": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

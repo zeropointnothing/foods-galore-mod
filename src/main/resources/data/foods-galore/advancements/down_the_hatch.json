@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:berry"
+    },
+    "title": "Down The Hatch!",
+    "description": "Consume Berry Wine and become drunk.",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "foods-galore:root",
+  "criteria": {
+    "h": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "potion": "foods-galore:berry_wine"
+        }
+      }
+    }
+  }
+}

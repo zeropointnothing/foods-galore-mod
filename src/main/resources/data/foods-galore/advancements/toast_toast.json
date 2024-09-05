@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "item": "foods-galore:cooked_bread"
+    },
+    "title": "All Toasters Toast Toast!",
+    "description": "Cook a slice of bread to make toast.",
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "foods-galore:welcome_fg",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "foods-galore:cooked_bread"
+      }
+    }
+  }
+}
