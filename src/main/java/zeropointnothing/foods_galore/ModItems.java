@@ -26,34 +26,10 @@ public class ModItems {
         return registeredItem;
     }
 
-    // FOODS
-    public static final Item SEASONED_BREAD = register(
-            new Item(new Item.Settings().food(new FoodComponent.Builder().alwaysEdible()
-                    .statusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 20 * 10, 2), 1.0f).build())),
-            "seasoned_bread"
-    );
-
-    public static final Item COOKED_BREAD = register(
-            new Item(new Item.Settings().food(new FoodComponent.Builder().snack().hunger(7).build())),
-            "cooked_bread"
-    );
-
-    public static final Item BREAD_SLICE = register(
-            new Item(new Item.Settings().food(new FoodComponent.Builder().snack().hunger(4).build())),
-            "bread_slice"
-    );
-
-    // food version of Berry Wine. Registered, but not obtainable via survival methods.
-    public static final Item BERRY_WINE_MUNCH = register(
-            new Item(new Item.Settings().food(new FoodComponent.Builder().alwaysEdible()
-                    .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 20 * 60, 1), 1.0f)
-                    .statusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 20 * 120, 3), 1.0f).build())),
-            "berry_wine_munchable"
-    );
-
-    // FOODS END
-
     // EFFECTS
+
+    public static final StatusEffect DRUNK_EFFECT = new DrunkEffect();
+
     public static class DrunkEffect extends StatusEffect {
         protected DrunkEffect() {
             super(StatusEffectCategory.BENEFICIAL, 5837859);
@@ -89,9 +65,33 @@ public class ModItems {
         }
     }
 
-    public static final StatusEffect DRUNK_EFFECT = new DrunkEffect();
-
     // EFFECTS END
+
+    // FOODS
+    public static final Item SEASONED_BREAD = register(
+            new Item(new Item.Settings().food(new FoodComponent.Builder().alwaysEdible()
+                    .statusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 20 * 10, 2), 1.0f).build())),
+            "seasoned_bread"
+    );
+
+    public static final Item COOKED_BREAD = register(
+            new Item(new Item.Settings().food(new FoodComponent.Builder().snack().hunger(7).build())),
+            "cooked_bread"
+    );
+
+    public static final Item BREAD_SLICE = register(
+            new Item(new Item.Settings().food(new FoodComponent.Builder().snack().hunger(4).build())),
+            "bread_slice"
+    );
+
+    // food version of Berry Wine. Registered, but not obtainable via survival methods.
+    public static final Item BERRY_WINE_MUNCH = register(
+            new Item(new Item.Settings().food(new FoodComponent.Builder().alwaysEdible()
+                    .statusEffect(new StatusEffectInstance(DRUNK_EFFECT, 20 * 60, 1), 1.0f).build())),
+            "berry_wine_munchable"
+    );
+
+    // FOODS END
 
     // Item Group
     public static final RegistryKey<ItemGroup> FG_ITEM_GROUP_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(FoodsGalore.MOD_ID, "item_group"));
