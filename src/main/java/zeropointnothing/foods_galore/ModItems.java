@@ -91,6 +91,13 @@ public class ModItems {
             "berry_wine_munchable"
     );
 
+    public static final Item CHOCOLATE_BAR = register(
+            new Item(new Item.Settings().food(new FoodComponent.Builder()
+                    .snack()
+                    .hunger(2).saturationModifier(8.0f).build())),
+            "chocolate_bar"
+    );
+
     // FOODS END
 
     // INGREDIENTS
@@ -98,13 +105,6 @@ public class ModItems {
     public static final Item COCOA_POWDER = register(
             new Item(new Item.Settings()),
             "cocoa_powder"
-    );
-
-    public static final Item CHOCOLATE_BAR = register(
-            new Item(new Item.Settings().food(new FoodComponent.Builder()
-                    .snack()
-                    .hunger(2).saturationModifier(8.0f).build())),
-            "chocolate_bar"
     );
 
     // INGREDIENTS END
