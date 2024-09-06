@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "foods-galore:bread_slice"
+      "item": "foods-galore:raw_toast"
     },
     "title": "You Know What They Say!",
     "description": "Acquire a Slice of Bread. Welcome to Foods Galore!",
@@ -18,7 +18,7 @@
         "items": [
           {
             "items": [
-              "foods-galore:bread_slice"
+              "foods-galore:raw_toast"
             ]
           }
         ]

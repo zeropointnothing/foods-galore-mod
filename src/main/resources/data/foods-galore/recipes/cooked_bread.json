@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smelting",
   "ingredient": {
-    "item": "foods-galore:bread_slice"
+    "item": "foods-galore:raw_toast"
   },
   "result": "foods-galore:cooked_bread",
   "experience": 0.15,

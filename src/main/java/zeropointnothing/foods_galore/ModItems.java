@@ -81,7 +81,7 @@ public class ModItems {
 
     public static final Item BREAD_SLICE = register(
             new Item(new Item.Settings().food(new FoodComponent.Builder().snack().hunger(4).build())),
-            "bread_slice"
+            "raw_toast"
     );
 
     // food version of Berry Wine. Registered, but not obtainable via survival methods.
