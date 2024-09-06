@@ -93,6 +93,22 @@ public class ModItems {
 
     // FOODS END
 
+    // INGREDIENTS
+
+    public static final Item COCOA_POWDER = register(
+            new Item(new Item.Settings()),
+            "cocoa_powder"
+    );
+
+    public static final Item CHOCOLATE_BAR = register(
+            new Item(new Item.Settings().food(new FoodComponent.Builder()
+                    .snack()
+                    .hunger(2).saturationModifier(8.0f).build())),
+            "chocolate_bar"
+    );
+
+    // INGREDIENTS END
+
     // Item Group
     public static final RegistryKey<ItemGroup> FG_ITEM_GROUP_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(FoodsGalore.MOD_ID, "item_group"));
     public static final ItemGroup FG_ITEM_GROUP = FabricItemGroup.builder()
