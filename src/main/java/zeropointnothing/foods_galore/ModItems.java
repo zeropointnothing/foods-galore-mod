@@ -107,6 +107,11 @@ public class ModItems {
             "cocoa_powder"
     );
 
+    public static final Item ROASTED_COCOA_BEANS = register(
+            new Item(new Item.Settings()),
+            "roasted_cocoa_beans"
+    );
+
     // INGREDIENTS END
 
     // Item Group
@@ -125,6 +130,9 @@ public class ModItems {
 //            itemGroup.add(ModItems.BERRY_WINE_MUNCH);
             itemGroup.add(ModItems.COOKED_BREAD);
             itemGroup.add(ModItems.BREAD_SLICE);
+            itemGroup.add(ModItems.COCOA_POWDER);
+            itemGroup.add(ModItems.ROASTED_COCOA_BEANS);
+            itemGroup.add(ModItems.CHOCOLATE_BAR);
             itemGroup.add(PotionUtil.setPotion(new ItemStack(Items.POTION), FoodsGalore.BERRY_WINE));
         });
     }

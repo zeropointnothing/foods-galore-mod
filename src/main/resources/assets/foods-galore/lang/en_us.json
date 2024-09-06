@@ -4,5 +4,8 @@
   "item.minecraft.potion.effect.berry_wine": "Berry Wine",
   "item.foods-galore.raw_toast": "Slice Of Bread",
   "item.foods-galore.cooked_bread": "Toast",
+  "item.foods-galore.cocoa_powder": "Cocoa Powder",
+  "item.foods-galore.roasted_cocoa_beans": "Roasted Cocoa Beans",
+  "item.foods-galore.chocolate_bar": "Chocolate Bar",
   "effect.foods-galore.drunk": "Drunk"
 }
