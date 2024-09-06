@@ -70,7 +70,7 @@ public class ModItems {
     // FOODS
     public static final Item SEASONED_BREAD = register(
             new Item(new Item.Settings().food(new FoodComponent.Builder().alwaysEdible().hunger(5).saturationModifier(5.8f)
-                    .statusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 20 * 10, 2), 1.0f).build())),
+                    .statusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 20 * 10, 0), 1.0f).build())),
             "seasoned_bread"
     );
 
