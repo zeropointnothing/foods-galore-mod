@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "minecraft:cocoa_beans"
+  },
+  "result": "foods-galore:roasted_cocoa_beans",
+  "experience": 0,
+  "cookingtime": 200
+}

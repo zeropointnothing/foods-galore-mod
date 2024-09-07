@@ -91,7 +91,28 @@ public class ModItems {
             "berry_wine_munchable"
     );
 
+    public static final Item CHOCOLATE_BAR = register(
+            new Item(new Item.Settings().food(new FoodComponent.Builder()
+                    .snack()
+                    .hunger(2).saturationModifier(8.0f).build())),
+            "chocolate_bar"
+    );
+
     // FOODS END
+
+    // INGREDIENTS
+
+    public static final Item COCOA_POWDER = register(
+            new Item(new Item.Settings()),
+            "cocoa_powder"
+    );
+
+    public static final Item ROASTED_COCOA_BEANS = register(
+            new Item(new Item.Settings()),
+            "roasted_cocoa_beans"
+    );
+
+    // INGREDIENTS END
 
     // Item Group
     public static final RegistryKey<ItemGroup> FG_ITEM_GROUP_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(FoodsGalore.MOD_ID, "item_group"));
@@ -109,6 +130,9 @@ public class ModItems {
 //            itemGroup.add(ModItems.BERRY_WINE_MUNCH);
             itemGroup.add(ModItems.COOKED_BREAD);
             itemGroup.add(ModItems.BREAD_SLICE);
+            itemGroup.add(ModItems.COCOA_POWDER);
+            itemGroup.add(ModItems.ROASTED_COCOA_BEANS);
+            itemGroup.add(ModItems.CHOCOLATE_BAR);
             itemGroup.add(PotionUtil.setPotion(new ItemStack(Items.POTION), FoodsGalore.BERRY_WINE));
         });
     }

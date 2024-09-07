@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "foods-galore:cocoa_powder"
+    },
+    "title": "Did You Say... Chocolate?",
+    "description": "Create a delicious sweet!",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "foods-galore:root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "foods-galore:chocolate_bar"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

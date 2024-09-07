@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "S",
+    "M"
+  ],
+  "key": {
+    "#": {
+      "item": "foods-galore:cocoa_powder"
+    },
+    "S": {
+      "item": "minecraft:sugar"
+    },
+    "M": {
+      "item": "minecraft:milk_bucket"
+    }
+  },
+  "result": {
+    "item": "foods-galore:chocolate_bar",
+    "count": 9
+  }
+}
