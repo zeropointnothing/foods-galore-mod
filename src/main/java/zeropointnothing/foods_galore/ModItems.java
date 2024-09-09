@@ -100,7 +100,7 @@ public class ModItems {
 
     public static final Item GRILLED_CHEESE = register(
             new Item(new Item.Settings().food(new FoodComponent.Builder()
-                    .hunger(8).saturationModifier(6.0f).build())),
+                    .hunger(12).saturationModifier(6.0f).build())),
             "grilled_cheese"
     );
 
