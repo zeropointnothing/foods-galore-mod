@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "foods-galore:grilled_cheese"
+    },
+    "title": "Oh No I Don't Understand This...",
+    "description": "Yay! Grilled Cheese!!!",
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "foods-galore:root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "foods-galore:grilled_cheese"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

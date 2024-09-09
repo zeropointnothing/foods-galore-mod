@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "G",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "foods-galore:cooked_bread"
+    },
+    "G": {
+      "item": "foods-galore:cheese"
+    }
+  },
+  "result": {
+    "item": "foods-galore:grilled_cheese",
+    "count": 1
+  }
+}

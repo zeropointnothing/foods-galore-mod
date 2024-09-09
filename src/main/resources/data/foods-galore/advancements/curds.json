@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "foods-galore:cheese_curds"
+    },
+    "title": "Yay... Cheese...",
+    "description": "Acquire the first step in cheese production.",
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "foods-galore:root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "foods-galore:cheese_curds"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
