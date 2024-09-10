@@ -98,6 +98,18 @@ public class ModItems {
             "chocolate_bar"
     );
 
+    public static final Item GRILLED_CHEESE = register(
+            new Item(new Item.Settings().food(new FoodComponent.Builder()
+                    .hunger(12).saturationModifier(6.0f).build())),
+            "grilled_cheese"
+    );
+
+    public static final Item CHEESE = register(
+            new Item(new Item.Settings().food(new FoodComponent.Builder().snack()
+                    .hunger(4).saturationModifier(4.0f).build())),
+            "cheese"
+    );
+
     // FOODS END
 
     // INGREDIENTS
@@ -110,6 +122,16 @@ public class ModItems {
     public static final Item ROASTED_COCOA_BEANS = register(
             new Item(new Item.Settings()),
             "roasted_cocoa_beans"
+    );
+
+    public static final Item CHEESE_CURDS = register(
+            new Item(new Item.Settings()),
+            "cheese_curds"
+    );
+
+    public static final Item CHEESE_WHEEL = register(
+            new Item(new Item.Settings()),
+            "cheese_wheel"
     );
 
     // INGREDIENTS END
@@ -130,9 +152,13 @@ public class ModItems {
 //            itemGroup.add(ModItems.BERRY_WINE_MUNCH);
             itemGroup.add(ModItems.COOKED_BREAD);
             itemGroup.add(ModItems.BREAD_SLICE);
+            itemGroup.add(ModItems.CHOCOLATE_BAR);
+            itemGroup.add(ModItems.CHEESE);
+            itemGroup.add(ModItems.GRILLED_CHEESE);
             itemGroup.add(ModItems.COCOA_POWDER);
             itemGroup.add(ModItems.ROASTED_COCOA_BEANS);
-            itemGroup.add(ModItems.CHOCOLATE_BAR);
+            itemGroup.add(ModItems.CHEESE_CURDS);
+            itemGroup.add(ModItems.CHEESE_WHEEL);
             itemGroup.add(PotionUtil.setPotion(new ItemStack(Items.POTION), FoodsGalore.BERRY_WINE));
         });
     }
