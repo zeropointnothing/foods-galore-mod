@@ -1,12 +1,14 @@
-Foods Galore is a Fabric food mod for Minecraft that aims to add more to your culinary adventures with new foods and some drinks.
+Foods Galore is a Fabric food mod for Minecraft that aims to enhance your culinary adventures by adding several new food items, such as chocolate or grilled cheese, each with their own recipe chains.
 
-Who needs Steak or Bread when you could be eating delicious chocolate, or even better, toast!
+Not only that, but with the longer process, you'll be rewarded with far superior items to fill your stomach quicker than ever before!
 
 ---
 
-## Disclaimer
+## Disclaimers
 
 This is my first mod. While I do consider myself proficient in the realm of programming, that means that I'm still learning how all of this works and cannot guarantee anything. Regardless, I will be trying my best to make this mod worthy of being in anyone's mod list.
+
+Foods Galore! is in Alpha. This means *nothing* is final, so you should expect bugs, odd behavior, or item removal at any time.
 
 ## Forge/Version Support
 
