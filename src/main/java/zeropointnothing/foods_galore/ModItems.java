@@ -140,6 +140,26 @@ public class ModItems {
             "cheese_wheel"
     );
 
+    public static final Item COOKED_NOODLES = register(
+            new Item(new Item.Settings()),
+            "cooked_noodles"
+    );
+
+    public static final Item NOODLES = register(
+            new Item(new Item.Settings()),
+            "noodles"
+    );
+
+    public static final Item DOUGH = register(
+            new Item(new Item.Settings()),
+            "dough"
+    );
+
+    public static final Item FLOUR = register(
+            new Item(new Item.Settings()),
+            "flour"
+    );
+
     // INGREDIENTS END
 
     // Item Group
