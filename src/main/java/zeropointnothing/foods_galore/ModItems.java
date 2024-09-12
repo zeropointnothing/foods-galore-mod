@@ -110,6 +110,12 @@ public class ModItems {
             "cheese"
     );
 
+    public static final Item BOWL_OF_NOODLES = register(
+            new StewItem(new Item.Settings().food(new FoodComponent.Builder()
+                    .hunger(10).saturationModifier(7.0f).build())),
+            "bowl_of_noodles"
+    );
+
     // FOODS END
 
     // INGREDIENTS
@@ -155,6 +161,7 @@ public class ModItems {
             itemGroup.add(ModItems.CHOCOLATE_BAR);
             itemGroup.add(ModItems.CHEESE);
             itemGroup.add(ModItems.GRILLED_CHEESE);
+            itemGroup.add(ModItems.BOWL_OF_NOODLES);
             itemGroup.add(ModItems.COCOA_POWDER);
             itemGroup.add(ModItems.ROASTED_COCOA_BEANS);
             itemGroup.add(ModItems.CHEESE_CURDS);
