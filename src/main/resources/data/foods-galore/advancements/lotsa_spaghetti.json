@@ -1,0 +1,24 @@
+{
+  "display": {
+    "icon": {
+      "item": "foods-galore:bowl_of_noodles"
+    },
+    "title": "Lots'a Spaghetti!",
+    "description": "Consume some homemade italian cuisine!",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "foods-galore:root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "foods-galore:bowl_of_noodles"
+          ]
+        }
+      }
+    }
+  }
+}

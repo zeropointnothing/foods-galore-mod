@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "item": "foods-galore:cooked_noodles"
+    },
+    "title": "Just Can't Wait!",
+    "description": "Reject societal norms and consume noodles without the bowl.",
+    "show_toast": false,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "foods-galore:lotsa_spaghetti",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "foods-galore:cooked_noodles"
+          ]
+        }
+      }
+    }
+  }
+}
