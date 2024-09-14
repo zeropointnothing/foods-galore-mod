@@ -186,6 +186,10 @@ public class ModItems {
             itemGroup.add(ModItems.ROASTED_COCOA_BEANS);
             itemGroup.add(ModItems.CHEESE_CURDS);
             itemGroup.add(ModItems.CHEESE_WHEEL);
+            itemGroup.add(ModItems.FLOUR);
+            itemGroup.add(ModItems.DOUGH);
+            itemGroup.add(ModItems.NOODLES);
+            itemGroup.add(ModItems.COOKED_NOODLES);
             itemGroup.add(PotionUtil.setPotion(new ItemStack(Items.POTION), FoodsGalore.BERRY_WINE));
         });
     }
