@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "foods-galore:dough"
+    }
+  },
+  "result": {
+    "item": "foods-galore:noodles",
+    "count": 1
+  }
+}

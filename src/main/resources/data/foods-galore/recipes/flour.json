@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:wheat"
+    }
+  ],
+  "result": {
+    "item": "foods-galore:flour",
+    "count": 1
+  }
+}

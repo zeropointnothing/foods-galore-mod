@@ -110,6 +110,12 @@ public class ModItems {
             "cheese"
     );
 
+    public static final Item BOWL_OF_NOODLES = register(
+            new StewItem(new Item.Settings().food(new FoodComponent.Builder()
+                    .hunger(10).saturationModifier(7.0f).build())),
+            "bowl_of_noodles"
+    );
+
     // FOODS END
 
     // INGREDIENTS
@@ -134,6 +140,27 @@ public class ModItems {
             "cheese_wheel"
     );
 
+    public static final Item COOKED_NOODLES = register(
+            new Item(new Item.Settings().food(new FoodComponent.Builder()
+                    .hunger(8).saturationModifier(5.0f).build())),
+            "cooked_noodles"
+    );
+
+    public static final Item NOODLES = register(
+            new Item(new Item.Settings()),
+            "noodles"
+    );
+
+    public static final Item DOUGH = register(
+            new Item(new Item.Settings()),
+            "dough"
+    );
+
+    public static final Item FLOUR = register(
+            new Item(new Item.Settings()),
+            "flour"
+    );
+
     // INGREDIENTS END
 
     // Item Group
@@ -155,10 +182,15 @@ public class ModItems {
             itemGroup.add(ModItems.CHOCOLATE_BAR);
             itemGroup.add(ModItems.CHEESE);
             itemGroup.add(ModItems.GRILLED_CHEESE);
+            itemGroup.add(ModItems.BOWL_OF_NOODLES);
             itemGroup.add(ModItems.COCOA_POWDER);
             itemGroup.add(ModItems.ROASTED_COCOA_BEANS);
             itemGroup.add(ModItems.CHEESE_CURDS);
             itemGroup.add(ModItems.CHEESE_WHEEL);
+            itemGroup.add(ModItems.FLOUR);
+            itemGroup.add(ModItems.DOUGH);
+            itemGroup.add(ModItems.NOODLES);
+            itemGroup.add(ModItems.COOKED_NOODLES);
             itemGroup.add(PotionUtil.setPotion(new ItemStack(Items.POTION), FoodsGalore.BERRY_WINE));
         });
     }

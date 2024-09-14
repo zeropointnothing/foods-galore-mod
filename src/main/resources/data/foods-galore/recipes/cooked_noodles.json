@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "foods-galore:noodles"
+  },
+  "result": "foods-galore:cooked_noodles",
+  "experience": 1,
+  "cookingtime": 100
+}

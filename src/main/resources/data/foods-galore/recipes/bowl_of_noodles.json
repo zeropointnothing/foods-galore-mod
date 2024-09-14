@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "B"
+  ],
+  "key": {
+    "#": {
+      "item": "foods-galore:cooked_noodles"
+    },
+    "B": {
+      "item": "minecraft:bowl"
+    }
+  },
+  "result": {
+    "item": "foods-galore:bowl_of_noodles",
+    "count": 1
+  }
+}
