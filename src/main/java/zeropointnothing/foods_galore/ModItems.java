@@ -141,7 +141,8 @@ public class ModItems {
     );
 
     public static final Item COOKED_NOODLES = register(
-            new Item(new Item.Settings()),
+            new Item(new Item.Settings().food(new FoodComponent.Builder()
+                    .hunger(8).saturationModifier(5.0f).build())),
             "cooked_noodles"
     );
 
