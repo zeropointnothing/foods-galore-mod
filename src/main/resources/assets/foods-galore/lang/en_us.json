@@ -11,5 +11,10 @@
   "item.foods-galore.cheese": "Cheese",
   "item.foods-galore.cheese_curds": "Cheese Curds",
   "item.foods-galore.cheese_wheel": "Wheel O' Cheese",
+  "item.foods-galore.flour": "Flour",
+  "item.foods-galore.dough": "Dough",
+  "item.foods-galore.noodles": "Noodles",
+  "item.foods-galore.cooked_noodles": "Cooked Noodles",
+  "item.foods-galore.bowl_of_noodles": "Bowl Of Noodles",
   "effect.foods-galore.drunk": "Drunk"
 }
